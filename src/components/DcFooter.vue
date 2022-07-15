@@ -47,6 +47,21 @@
                 </div>
             </div>
         </section>
+        <section class="header-bottom">
+            <div class="header-container">
+                <div class="button">
+                    <button>Sign-up now!</button>
+                </div>
+                <div class="social-icons">
+                    <span>Follow us</span>
+                    <img src="../assets/img/footer-facebook.png" alt="Fb icon">
+                    <img src="../assets/img/footer-twitter.png" alt="Fb icon">
+                    <img src="../assets/img/footer-youtube.png" alt="Fb icon">
+                    <img src="../assets/img/footer-pinterest.png" alt="Fb icon">
+                    <img src="../assets/img/footer-periscope.png" alt="Fb icon">
+                </div>
+            </div>
+        </section>
     </footer>
 </template>
 
@@ -69,4 +84,9 @@ export default {
 <style lang="scss" scoped>
 @import '../style/common.scss';
 @import '../style/variables.scss';
+
+.list-menu {
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-size: cover;
+}
 </style>
