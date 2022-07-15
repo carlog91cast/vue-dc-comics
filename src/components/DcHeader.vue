@@ -82,5 +82,28 @@
 <style lang="scss" scoped>
 @import '../style/common.scss';
 
-.header-container {}
+.header-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    .logo {
+        img {
+            width: 50px;
+        }
+    }
+    .header-nav{
+        .header-list{
+
+            li{
+
+            }
+        }
+    }
+
+}
 </style>
