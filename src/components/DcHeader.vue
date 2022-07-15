@@ -1,4 +1,4 @@
-<header>
+<template>
     <div class="header-container">
         <div class="logo">
             <img src="../assets/img/dc-logo.png" alt="">
@@ -18,7 +18,7 @@
             </ul>
         </nav>
     </div>
-</header>
+</template>
 
 <script>
 // export default {
@@ -81,6 +81,7 @@
 
 <style lang="scss" scoped>
 @import '../style/common.scss';
+@import '../style/variables.scss';
 
 .header-container {
     width: 70%;
@@ -104,7 +105,15 @@
             li {
                 margin-right: 1rem;
                 font-size: 0.8rem;
+
+                // .bottom-line {
+                //     color: $brand_color;
+                //     border-bottom: 2px solid $brand_color;
+                // }
             }
+
+
+
         }
     }
 
