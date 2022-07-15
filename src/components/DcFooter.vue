@@ -50,20 +50,30 @@
                 <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </section>
-        <section class="header-bottom">
-            <div class="header-container">
+        <section class="footer-bottom">
+            <nav class="footer-nav">
                 <div class="button">
                     <button>Sign-up now!</button>
                 </div>
-                <div class="social-icons">
-                    <span>Follow us</span>
-                    <img src="../assets/img/footer-facebook.png" alt="Fb icon">
-                    <img src="../assets/img/footer-twitter.png" alt="Fb icon">
-                    <img src="../assets/img/footer-youtube.png" alt="Fb icon">
-                    <img src="../assets/img/footer-pinterest.png" alt="Fb icon">
-                    <img src="../assets/img/footer-periscope.png" alt="Fb icon">
-                </div>
-            </div>
+                <h3>Follow us</h3>
+                <ul class="social-icons">
+                    <li>
+                        <img src="../assets/img/footer-facebook.png" alt="Fb icon">
+                    </li>
+                    <li>
+                        <img src="../assets/img/footer-twitter.png" alt="Fb icon">
+                    </li>
+                    <li>
+                        <img src="../assets/img/footer-youtube.png" alt="Fb icon">
+                    </li>
+                    <li>
+                        <img src="../assets/img/footer-pinterest.png" alt="Fb icon">
+                    </li>
+                    <li>
+                        <img src="../assets/img/footer-periscope.png" alt="Fb icon">
+                    </li>
+                </ul>
+            </nav>
         </section>
     </footer>
 </template>
@@ -102,6 +112,7 @@ export default {
         div {
             width: calc(100% / 3);
             padding: 20px;
+
             h3 {
                 color: white;
                 padding: 5px;
@@ -110,7 +121,7 @@ export default {
             li {
                 color: grey;
                 padding: 5px;
-                
+
             }
         }
     }
@@ -124,5 +135,52 @@ h3 {
     color: white;
     text-transform: uppercase;
     margin-top: 15px;
+}
+
+.footer-bottom {
+    background-color: $footer_color;
+
+    .footer-nav {
+        width: 70%;
+        margin: 0 auto;
+        padding: 0.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+
+        .button {
+            padding: 15px;
+            border-radius: 15px;
+            background-color: $footer_color;
+            border: 2px solid $brand_color;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            color: $brand_color;
+            margin-bottom: 10px;
+            margin-left: 45%;
+
+        }
+
+        .social-icons {
+            display: flex;
+
+            li {
+                margin-right: 1rem;
+                font-size: 0.8rem;
+
+                // .bottom-line {
+                //     color: $brand_color;
+                //     border-bottom: 2px solid $brand_color;
+                // }
+            }
+
+
+
+        }
+    }
+
 }
 </style>
