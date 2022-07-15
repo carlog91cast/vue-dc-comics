@@ -1,4 +1,4 @@
-<template>
+<header>
     <div class="header-container">
         <div class="logo">
             <img src="../assets/img/dc-logo.png" alt="">
@@ -18,7 +18,7 @@
             </ul>
         </nav>
     </div>
-</template>
+</header>
 
 <script>
 // export default {
