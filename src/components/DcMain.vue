@@ -65,7 +65,7 @@ export default {
 .menu-icon {
     background-color: $brand_color;
     width: 100%;
-    height: 20vh;
+    height: 15vh;
 
     .list-icon {
         width: 70%;
@@ -76,19 +76,20 @@ export default {
             width: calc(100% / 5);
             display: flex;
             align-items: center;
+            margin-top: 30px;
             
 
             img {
                 width: 20%;
                 height: 50px;
-                margin-top: 23px;
+
             }
 
             p {
                 color: white;
                 font-size: 12px;
                 text-transform: uppercase;
-                margin-top: 17px;
+                margin-top: 10px;
                 margin-left: 10px;
                 
             }
