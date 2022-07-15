@@ -96,11 +96,14 @@
             width: 50px;
         }
     }
-    .header-nav{
-        .header-list{
 
-            li{
+    .header-nav {
+        .header-list {
+            display: flex;
 
+            li {
+                margin-right: 1rem;
+                font-size: 0.8rem;
             }
         }
     }
