@@ -2,9 +2,18 @@
     <div class="header-container">
         <div class="logo">
             <img src="../assets/img/dc-logo.png" alt="">
-            <nav>
-                <ul>
-                    <li></li>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li>CHARACTERS</li>
+                    <li>COMICS</li>
+                    <li>MOVIES</li>
+                    <li>TV</li>
+                    <li>GAMES</li>
+                    <li>COLLECTIBLES</li>
+                    <li>VIDEOS</li>
+                    <li>FANS</li>
+                    <li>NEWS</li>
+                    <li>SHOP</li>
                 </ul>
             </nav>
         </div>
@@ -71,4 +80,5 @@
 </script>
 
 <style>
+
 </style>
