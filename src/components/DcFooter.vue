@@ -2,49 +2,52 @@
     <footer>
         <section class="list-menu">
             <div class="lists">
-                <div class="list-left">
+                <div>
                     <h3>dc comics</h3>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
                     </ul>
                     <h3>shop</h3>
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>characters</li>
+                        <li>characters</li>
                     </ul>
                 </div>
-                <div class="list-center">
+                <div>
                     <h3>dc</h3>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
                     </ul>
                 </div>
-                <div class="list-right">
+                <div>
                     <h3>sites</h3>
                     <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
+                        <li>characters</li>
                     </ul>
                 </div>
+            </div>
+            <div class="footer-logo">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </section>
         <section class="header-bottom">
@@ -88,5 +91,38 @@ export default {
 .list-menu {
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
+    display: flex;
+    ;
+
+    .lists {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px auto;
+
+        div {
+            width: calc(100% / 3);
+            padding: 20px;
+            h3 {
+                color: white;
+                padding: 5px;
+            }
+
+            li {
+                color: grey;
+                padding: 5px;
+                
+            }
+        }
+    }
+
+    .footer-logo {
+        margin-right: 15%;
+    }
+}
+
+h3 {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 15px;
 }
 </style>
