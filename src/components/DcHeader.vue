@@ -2,21 +2,21 @@
     <div class="header-container">
         <div class="logo">
             <img src="../assets/img/dc-logo.png" alt="">
-            <nav class="header-nav">
-                <ul class="header-list">
-                    <li>CHARACTERS</li>
-                    <li>COMICS</li>
-                    <li>MOVIES</li>
-                    <li>TV</li>
-                    <li>GAMES</li>
-                    <li>COLLECTIBLES</li>
-                    <li>VIDEOS</li>
-                    <li>FANS</li>
-                    <li>NEWS</li>
-                    <li>SHOP</li>
-                </ul>
-            </nav>
         </div>
+        <nav class="header-nav">
+            <ul class="header-list">
+                <li>CHARACTERS</li>
+                <li>COMICS</li>
+                <li>MOVIES</li>
+                <li>TV</li>
+                <li>GAMES</li>
+                <li>COLLECTIBLES</li>
+                <li>VIDEOS</li>
+                <li>FANS</li>
+                <li>NEWS</li>
+                <li>SHOP</li>
+            </ul>
+        </nav>
     </div>
 </template>
 
@@ -79,6 +79,8 @@
 
 </script>
 
-<style>
+<style lang="scss" scoped>
+@import '../style/common.scss';
 
+.header-container {}
 </style>
