@@ -34,7 +34,7 @@ export default {
                     imgUrl: 'buy-comics-subscriptions.png'
                 },
                 {
-                    text: 'Shop Locatin',
+                    text: 'Shop Location',
                     imgUrl: 'buy-comics-shop-locator.png'
                 },
                 {
@@ -65,6 +65,9 @@ export default {
         .product {
             display: flex;
             align-items: center;
+            justify-content: center;
+            height: 80px;
+            width: calc(100% / 5);
 
             .img-container {
                 display: flex;

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <DcHeader/>
-    <DcMain/>
+    <DcCards/>
     <DcProducts/>
     <DcFooter/>
   </div>
@@ -9,7 +9,7 @@
 
 <script>
 import DcHeader from './components/DcHeader.vue'
-import DcMain from './components/DcMain.vue'
+import DcCards from './components/DcCards.vue'
 import DcProducts from './components/DcProducts.vue'
 import DcFooter from './components/DcFooter.vue'
 
@@ -17,7 +17,7 @@ export default {
   name: 'App',
   components: {
     DcHeader,
-    DcMain,
+    DcCards,
     DcProducts,
     DcFooter,
   }
