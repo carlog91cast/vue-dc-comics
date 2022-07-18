@@ -1,10 +1,10 @@
 <template>
-    <main>
-        <div v-for="(slide, index) in dcSlides" :key="index" class="container d-flex ">
+    <main class="d-flex flex-wrap cards-container">
+        <div v-for="(slide, index) in dcSlides" :key="index" class="container slide-box p-4">
             <div>
                 <img class="w-100" :src="slide.thumb" alt="">
             </div>
-            <h3>{{slide.series}}</h3>
+            <h3>{{ slide.series }}</h3>
         </div>
     </main>
 </template>
@@ -92,7 +92,7 @@ export default {
             ],
         };
     }
-        
+
 
 
 }
@@ -103,4 +103,13 @@ export default {
 <style lang="scss" scoped>
 @import '../style/common.scss';
 @import '../style/variables.scss';
+
+.slide-box {
+    width: calc(100% / 6);
+}
+
+.cards-container {
+    background-color: $brand_secondary_color;
+    color: white;
+}
 </style>
