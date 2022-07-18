@@ -1,10 +1,15 @@
 <template>
-    <main class="cards-container">
-        <div class="container slide-box p-4">
-            <CardComponents v-for="(slide, index) in dcSlides" :key="index" :singleSlide="slide" class="box p-2" />
-
+    <main>
+        <div class="jumbotron">
+            <h2>current series</h2>
+        </div>
+        <div class="cards-container">
+            <div class="container slide-box p-4">
+                <CardComponents v-for="(slide, index) in dcSlides" :key="index" :singleSlide="slide" class="box p-2 mt-4" />
+            </div>
         </div>
     </main>
+
 </template>
 
 <script>
@@ -94,7 +99,7 @@ export default {
             ],
         };
     },
-    
+
 }
 
 
@@ -113,7 +118,23 @@ export default {
     background-color: $brand_secondary_color;
     color: white;
 }
-.box{
+
+.box {
     width: calc(100% / 6);
+}
+.jumbotron{
+    height: 450px;
+    background-image:url(../assets/img/jumbotron.jpg);
+    background-size: cover;
+    position: relative;
+    h2{
+        position: absolute;
+        bottom: -30px;
+        left: 90px;
+        background-color: $brand_color;
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+    }
 }
 </style>

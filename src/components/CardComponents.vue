@@ -23,7 +23,7 @@ export default {
 @import '../style/variables.scss';
 
 h3{
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 200;
     text-transform: uppercase;
     margin: 10px 0;
