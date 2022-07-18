@@ -1,7 +1,7 @@
 <template>
-    <main class="d-flex flex-wrap cards-container">
+    <main class="cards-container">
         <div class="container slide-box p-4">
-            <CardComponents v-for="(slide, index) in dcSlides" :key="index" :singleSlide="slide" />
+            <CardComponents v-for="(slide, index) in dcSlides" :key="index" :singleSlide="slide" class="box p-2" />
 
         </div>
     </main>
@@ -100,16 +100,20 @@ export default {
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '../style/common.scss';
 @import '../style/variables.scss';
 
 .slide-box {
-    width: calc(100% / 6);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cards-container {
     background-color: $brand_secondary_color;
     color: white;
+}
+.box{
+    width: calc(100% / 6);
 }
 </style>
