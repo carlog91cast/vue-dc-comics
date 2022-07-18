@@ -1,10 +1,10 @@
 <template>
     <main>
-        <div class="container">
+        <div v-for="(slide, index) in dcSlides" :key="index" class="container d-flex ">
             <div>
-                <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="">
+                <img class="w-100" :src="slide.thumb" alt="">
             </div>
-            <h3>action man</h3>
+            <h3>{{slide.series}}</h3>
         </div>
     </main>
 </template>
