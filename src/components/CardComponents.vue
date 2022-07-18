@@ -18,10 +18,20 @@ export default {
 
 </script>
     
-<style lang="scss">
+<style lang="scss" scoped>
 @import '../style/common.scss';
 @import '../style/variables.scss';
 
-
+h3{
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+img{
+    height: 180px;
+    object-fit: cover;
+    object-position: top;
+}
 
 </style>
