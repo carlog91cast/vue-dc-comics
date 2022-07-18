@@ -64,21 +64,27 @@ export default {
 
         .product {
             display: flex;
-            margin-right: 5rem;
             align-items: center;
 
             .img-container {
                 display: flex;
-                height: 5rem;
-                vertical-align: middle;
-                margin-right: 1rem;
+                margin-left: 5rem;
+                
+
+                img {
+                    height: 5rem;
+                }
+
+                h3 {
+                    color: white;
+                    font-weight: 100;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    margin-top: 1rem;
+                    margin-left: 10px;
+                }
             }
 
-            h3 {
-                color: white;
-                font-weight: 100;
-                text-transform: uppercase;
-            }
         }
     }
 
