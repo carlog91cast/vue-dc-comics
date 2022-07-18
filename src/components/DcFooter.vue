@@ -107,7 +107,7 @@ export default {
     .lists {
         display: flex;
         justify-content: space-between;
-        margin: 15px auto;
+        margin: 20px auto;
 
         div {
             width: calc(100% / 4);
@@ -120,7 +120,7 @@ export default {
 
             li {
                 color: grey;
-                padding: 2px;
+                padding: 1px;
 
             }
         }
