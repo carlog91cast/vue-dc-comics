@@ -1,19 +1,21 @@
 <template>
     <main class="d-flex flex-wrap cards-container">
-        <div v-for="(slide, index) in dcSlides" :key="index" class="container slide-box p-4">
-            <div>
-                <img class="w-100" :src="slide.thumb" alt="">
-            </div>
-            <h3>{{ slide.series }}</h3>
+        <div class="container slide-box p-4">
+            <CardComponents v-for="(slide, index) in dcSlides" :key="index" :singleSlide="slide" />
+
         </div>
     </main>
 </template>
 
 <script>
+import CardComponents from "./CardComponents.vue";
 
 export default {
+    name: "DcCards",
+    components: {
+        CardComponents,
+    },
 
-    name: 'DcCards',
     data: function () {
         return {
             dcSlides: [
@@ -91,10 +93,8 @@ export default {
                 },
             ],
         };
-    }
-
-
-
+    },
+    
 }
 
 
