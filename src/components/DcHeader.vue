@@ -5,77 +5,68 @@
         </div>
         <nav class="header-nav">
             <ul class="header-list">
-                <li>CHARACTERS</li>
-                <li>COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
+                <li v-for="(item, index) in navItems" :key="index"><a :href="item.url">{{item.text}}</a></li>
             </ul>
         </nav>
     </div>
 </template>
 
 <script>
-// export default {
-//     name: 'PageHeader',
-//     data() {
-//         return {
-//             navItems: [
-//                 {
-//                     text: 'CHARACTERS',
-//                     url: '#',
-//                 },
-//                 {
-//                     text: 'COMICS',
-//                     url: '#',
-//                 },
-//                 {
-//                     text: 'MOVIES',
-//                     url: '#',
-//                 },
-//                 {
-//                     text: 'TV',
-//                     url: '#',
-//                 },
-//                 {
-//                     text: 'GAMES',
-//                     url: '#',
+export default {
+    name: 'PageHeader',
+    data() {
+        return {
+            navItems: [
+                {
+                    text: 'CHARACTERS',
+                    url: '#',
+                },
+                {
+                    text: 'COMICS',
+                    url: '#',
+                },
+                {
+                    text: 'MOVIES',
+                    url: '#',
+                },
+                {
+                    text: 'TV',
+                    url: '#',
+                },
+                {
+                    text: 'GAMES',
+                    url: '#',
 
-//                 },
-//                 {
-//                     text: 'COLLECTIBLES',
-//                     url: '#',
+                },
+                {
+                    text: 'COLLECTIBLES',
+                    url: '#',
 
-//                 },
-//                 {
-//                     text: 'VIDEOS',
-//                     url: '#',
+                },
+                {
+                    text: 'VIDEOS',
+                    url: '#',
 
-//                 },
-//                 {
-//                     text: 'FANS',
-//                     url: '#',
+                },
+                {
+                    text: 'FANS',
+                    url: '#',
 
-//                 },
-//                 {
-//                     text: 'NEWS',
-//                     url: '#',
+                },
+                {
+                    text: 'NEWS',
+                    url: '#',
 
-//                 },
-//                 {
-//                     text: 'SHOP',
-//                     url: '#',
+                },
+                {
+                    text: 'SHOP',
+                    url: '#',
 
-//                 }
-//             ],
-//         };
-//     }
-// }
+                }
+            ],
+        };
+    }
+}
 
 </script>
 
@@ -101,6 +92,7 @@
     .header-nav {
         .header-list {
             display: flex;
+
             li {
                 margin-right: 1rem;
                 font-size: 0.8rem;

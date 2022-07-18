@@ -53,9 +53,9 @@
         <section class="footer-bottom">
             <nav class="footer-nav">
                 <div class="button">
-                    <button>Sign-up now!</button>
+                    <button class="btn btn primary" >Sign-up now!</button>
                 </div>
-                <h3>Follow us</h3>
+                <h3 class="fs-5">Follow us</h3>
                 <ul class="social-icons">
                     <li>
                         <img src="../assets/img/footer-facebook.png" alt="Fb icon">
@@ -110,8 +110,8 @@ export default {
         margin: 15px auto;
 
         div {
-            width: calc(100% / 3);
-            padding: 20px;
+            width: calc(100% / 4);
+            padding: 25px;
 
             h3 {
                 color: white;
@@ -120,7 +120,7 @@ export default {
 
             li {
                 color: grey;
-                padding: 5px;
+                padding: 2px;
 
             }
         }
@@ -128,6 +128,11 @@ export default {
 
     .footer-logo {
         margin-right: 15%;
+        img{
+            height:30rem;
+            object-fit: contain;
+            object-position: center;
+        }
     }
 }
 
@@ -149,9 +154,8 @@ h3 {
         align-items: center;
         height: 100px;
 
-        .button {
-            padding: 15px;
-            border-radius: 15px;
+        button {
+            color:white;
             background-color: $footer_color;
             border: 2px solid $brand_color;
         }
@@ -159,7 +163,7 @@ h3 {
         h3 {
             text-transform: uppercase;
             color: $brand_color;
-            margin-bottom: 10px;
+            margin-bottom: 13px;
             margin-left: 45%;
 
         }
