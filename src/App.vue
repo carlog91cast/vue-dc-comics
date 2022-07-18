@@ -2,6 +2,7 @@
   <div id="app">
     <DcHeader/>
     <DcMain/>
+    <DcProducts/>
     <DcFooter/>
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import DcHeader from './components/DcHeader.vue'
 import DcMain from './components/DcMain.vue'
+import DcProducts from './components/DcProducts.vue'
 import DcFooter from './components/DcFooter.vue'
 
 export default {
@@ -16,6 +18,7 @@ export default {
   components: {
     DcHeader,
     DcMain,
+    DcProducts,
     DcFooter,
   }
 }
